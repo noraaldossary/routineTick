@@ -33,7 +33,13 @@ struct Task: View {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
                                     .stroke(Color.gray, lineWidth: 1))
-                        
+                        Rectangle()
+                            .foregroundColor(Color(red: 0.941, green: 0.941, blue: 0.941))
+
+                            .frame(width: 350, height: 40)
+                            .padding(.bottom,517)
+                            .padding(.leading,2)
+                            .cornerRadius(20)
                         Text("add new task")
                             .frame(maxWidth: .infinity, alignment: .leading)
                                 .alignmentGuide(.leading) { _ in 0 }
@@ -73,7 +79,24 @@ struct Task: View {
                         
                     
                     }
-                    
+            HStack{
+                Text("Cancel")
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 5)
+                    .background(Color(red: 0.941, green: 0.941, blue: 0.941))
+                    .cornerRadius(5)
+
+                NavigationLink(destination: role()) {
+                    Text("Add")
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 17)
+                        .padding(.vertical, 5)
+                        .background(Color(red: 0.539, green: 0.369, blue: 0.706))
+                        .cornerRadius(5)
+                }
+                
+            }
                 
 
                 }
