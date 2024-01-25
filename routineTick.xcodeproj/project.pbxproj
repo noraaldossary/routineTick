@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C930002B62510700C4A0D0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C92FFF2B62510700C4A0D0 /* Task.swift */; };
 		77C985842B5F914800FA95C1 /* routineTickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985832B5F914800FA95C1 /* routineTickApp.swift */; };
 		77C985862B5F914800FA95C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985852B5F914800FA95C1 /* ContentView.swift */; };
 		77C985882B5F914900FA95C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C985872B5F914900FA95C1 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C92FFF2B62510700C4A0D0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		77C985802B5F914800FA95C1 /* routineTick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = routineTick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C985832B5F914800FA95C1 /* routineTickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routineTickApp.swift; sourceTree = "<group>"; };
 		77C985852B5F914800FA95C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				77C985852B5F914800FA95C1 /* ContentView.swift */,
 				E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */,
 				E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */,
+				04C92FFF2B62510700C4A0D0 /* Task.swift */,
 				E5A2DFB22B5F9FC8008CD04D /* role.swift */,
 				77C985872B5F914900FA95C1 /* Assets.xcassets */,
 				77C985892B5F914900FA95C1 /* Preview Content */,
@@ -150,6 +153,7 @@
 				E5A2DFB32B5F9FC8008CD04D /* role.swift in Sources */,
 				77C985862B5F914800FA95C1 /* ContentView.swift in Sources */,
 				E5A2DFB12B5F9F56008CD04D /* Onboarding.swift in Sources */,
+				04C930002B62510700C4A0D0 /* Task.swift in Sources */,
 				77C985842B5F914800FA95C1 /* routineTickApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
