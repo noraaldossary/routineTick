@@ -17,6 +17,8 @@ struct Task: View {
         @State var Tname = ""
         @State var Des = ""
         @State var isOn = false
+//    @State private var item  = NewTask()
+    
     var body: some View {
         VStack {
                     Text("Task")
