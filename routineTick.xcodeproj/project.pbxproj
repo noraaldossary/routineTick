@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AF6DF2B662B7900B54A8D /* newtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AF6DE2B662B7900B54A8D /* newtask.swift */; };
 		04C930002B62510700C4A0D0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C92FFF2B62510700C4A0D0 /* Task.swift */; };
 		77C985842B5F914800FA95C1 /* routineTickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985832B5F914800FA95C1 /* routineTickApp.swift */; };
 		77C985862B5F914800FA95C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985852B5F914800FA95C1 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040AF6DE2B662B7900B54A8D /* newtask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newtask.swift; sourceTree = "<group>"; };
 		04C92FFF2B62510700C4A0D0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		77C985802B5F914800FA95C1 /* routineTick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = routineTick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C985832B5F914800FA95C1 /* routineTickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routineTickApp.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */,
 				E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */,
 				04C92FFF2B62510700C4A0D0 /* Task.swift */,
+				040AF6DE2B662B7900B54A8D /* newtask.swift */,
 				E5A2DFB22B5F9FC8008CD04D /* role.swift */,
 				77C985872B5F914900FA95C1 /* Assets.xcassets */,
 				77C985892B5F914900FA95C1 /* Preview Content */,
@@ -151,6 +154,7 @@
 			files = (
 				E5A2DFAF2B5F9E3D008CD04D /* RuleView.swift in Sources */,
 				E5A2DFB32B5F9FC8008CD04D /* role.swift in Sources */,
+				040AF6DF2B662B7900B54A8D /* newtask.swift in Sources */,
 				77C985862B5F914800FA95C1 /* ContentView.swift in Sources */,
 				E5A2DFB12B5F9F56008CD04D /* Onboarding.swift in Sources */,
 				04C930002B62510700C4A0D0 /* Task.swift in Sources */,
@@ -288,7 +292,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"routineTick/Preview Content\"";
-				DEVELOPMENT_TEAM = V6K5GWB69S;
+				DEVELOPMENT_TEAM = 7246UF2S5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -317,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"routineTick/Preview Content\"";
-				DEVELOPMENT_TEAM = V6K5GWB69S;
+				DEVELOPMENT_TEAM = 7246UF2S5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
