@@ -9,13 +9,15 @@ import Foundation
 import SwiftData
 @Model
 class NewTask {
-    var title: String
+    var titleName: String
     var descr: String
-    var todaytime : Data
-    var todaystart : Data
-    var todayend : Data
-    init(title: String = "", descr: String = "", todaytime: Data = Data(), todaystart: Data = Data(), todayend: Data = Data()) {
-        self.title = title
+    var todaytime : Date
+    var todaystart : Date
+    var todayend : Date
+    
+    init(titleName: String = "", descr: String = "", todaytime: Date = Date(), todaystart: Date = Date() , todayend: Date = Date())
+    {
+        self.titleName = titleName
         self.descr = descr
         self.todaytime = todaytime
         self.todaystart = todaystart

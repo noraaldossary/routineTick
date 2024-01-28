@@ -12,7 +12,7 @@ import SwiftData
 struct routineTickApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskView()
                 .modelContainer(for: NewTask.self )
         }
     }

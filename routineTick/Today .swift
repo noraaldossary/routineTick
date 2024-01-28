@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct Today: View {
     @State private var time = Date()
     @State private var showCreate = false
     @State private var showQR = false
+    
+    @Query private var items: [NewTask]
+
     var body: some View {
         
         NavigationStack{
@@ -45,36 +49,43 @@ struct Today: View {
                             RunLoop.current.add(timer, forMode: .common)
                         }
                     ZStack{
-                        
-                        Rectangle()
-                            .foregroundColor(.white) // غيّر لون الخلفية إلى أبيض
-                            .shadow(color: .gray, radius: 2, x: 6, y: 2)
-                            .frame(width: 260, height: 70)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.darkPurple, lineWidth: 1)
-                                
-                            )
-                        Text("Wake Up")
-                            .padding(.bottom,40)
-                            .padding(.trailing,120)
-                        Text("8:00 Am")
-                            .font(.body)
-                            .padding(.bottom,40)
-                            .padding(.leading,170)
-                            .foregroundColor(.gray)
-                    Text("Description ")
-                            .padding(.top,40)
-                            .padding(.trailing,120)
-                            .foregroundColor(.gray)
-                        Button{}label: {
-                            Image(systemName: "checkmark")
-                                .symbolVariant(.circle.fill)
-                            //        .foregroundStyle()
-                                .font(.title)
-                                .padding(.leading,200)
-                                .padding(.top,20)
+                        ForEach(items) { item in
+                            
+                            Rectangle()
+                                .foregroundColor(.white) // غيّر لون الخلفية إلى أبيض
+                                .shadow(color: .gray, radius: 2, x: 6, y: 2)
+                                .frame(width: 260, height: 70)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.darkPurple, lineWidth: 1)
+                                    
+                                )
+                            Text(item.titleName)
+                                .padding(.bottom,40)
+                                .padding(.trailing,120)
+//                            Text(item.todaytime)
+//                                .font(.body)
+//                                .padding(.bottom,40)
+//                                .padding(.leading,170)
+//                                .foregroundColor(.gray)
+                            Text(item.descr)
+                                .padding(.top,40)
+                                .padding(.trailing,120)
+                                .foregroundColor(.gray)
+                            Button{}label: {
+                                Image(systemName: "checkmark")
+                                    .symbolVariant(.circle.fill)
+                                //        .foregroundStyle()
+                                    .font(.title)
+                                    .padding(.leading,200)
+                                    .padding(.top,20)
+                            }
+                            
+                            
+                            
+                            
                         }
+                  
                         
                         
                         
@@ -97,7 +108,7 @@ struct Today: View {
                                 .foregroundColor(Color.darkPurple)
                         }.sheet(isPresented: $showCreate, content: {
                             NavigationStack{
-                             Task()
+                             TaskView()
                             }.presentationDetents([.large])
                         })
                     }

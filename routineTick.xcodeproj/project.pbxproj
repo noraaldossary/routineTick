@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040AF6DF2B662B7900B54A8D /* newtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AF6DE2B662B7900B54A8D /* newtask.swift */; };
-		04C930002B62510700C4A0D0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C92FFF2B62510700C4A0D0 /* Task.swift */; };
+		04C930002B62510700C4A0D0 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C92FFF2B62510700C4A0D0 /* TaskView.swift */; };
 		29971A822B66328400AC0E9E /* Today .swift in Sources */ = {isa = PBXBuildFile; fileRef = 29971A812B66328400AC0E9E /* Today .swift */; };
 		77C985842B5F914800FA95C1 /* routineTickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985832B5F914800FA95C1 /* routineTickApp.swift */; };
 		77C985862B5F914800FA95C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985852B5F914800FA95C1 /* ContentView.swift */; };
@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		040AF6DE2B662B7900B54A8D /* newtask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newtask.swift; sourceTree = "<group>"; };
-		04C92FFF2B62510700C4A0D0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		04C92FFF2B62510700C4A0D0 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		29971A812B66328400AC0E9E /* Today .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Today .swift"; sourceTree = "<group>"; };
 		77C985802B5F914800FA95C1 /* routineTick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = routineTick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C985832B5F914800FA95C1 /* routineTickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routineTickApp.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 				77C985852B5F914800FA95C1 /* ContentView.swift */,
 				E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */,
 				E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */,
-				04C92FFF2B62510700C4A0D0 /* Task.swift */,
+				04C92FFF2B62510700C4A0D0 /* TaskView.swift */,
 				040AF6DE2B662B7900B54A8D /* newtask.swift */,
 				29971A812B66328400AC0E9E /* Today .swift */,
 				E5A2DFB22B5F9FC8008CD04D /* role.swift */,
@@ -163,7 +163,7 @@
 				040AF6DF2B662B7900B54A8D /* newtask.swift in Sources */,
 				77C985862B5F914800FA95C1 /* ContentView.swift in Sources */,
 				E5A2DFB12B5F9F56008CD04D /* Onboarding.swift in Sources */,
-				04C930002B62510700C4A0D0 /* Task.swift in Sources */,
+				04C930002B62510700C4A0D0 /* TaskView.swift in Sources */,
 				77C985842B5F914800FA95C1 /* routineTickApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-struct Task: View {
+
+struct TaskView: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) var context
+    
     @State var DatePickerR: Date = Date()
         let startingDate: Date = Calendar.current.date(from: DateComponents( month: 1, day: 1)) ?? Date()
         let endingDate : Date = Calendar.current.date(from: DateComponents( month: 6, day: 30)) ?? Date()
@@ -17,8 +21,8 @@ struct Task: View {
         @State var Tname = ""
         @State var Des = ""
         @State var isOn = false
-//    @State private var item  = NewTask()
     
+  @State private var item  = NewTask()
     var body: some View {
         VStack {
                     Text("Task")
@@ -30,7 +34,7 @@ struct Task: View {
 
                         Rectangle()
                             .foregroundColor(.white)
-                            .shadow( color: .gray, radius: 2, x: 8,y:3)
+                             .shadow( color: .gray, radius: 2, x: 8,y:3)
                             .frame(width: 350,height: 555)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
@@ -47,26 +51,26 @@ struct Task: View {
                                 .alignmentGuide(.leading) { _ in 0 }
                                 .padding(.bottom,500)
                                 .padding(.leading,25)
-                        TextField("Task Name..", text: $Tname)
+                        TextField("Task Name..", text: $item.titleName)
                         .keyboardType(.alphabet)
                         .padding(.bottom,420)
                         .padding(.leading,25)
-                        TextField("Task Description..", text: $Des)
+                        TextField("Task Description..", text: $item.descr)
                         .keyboardType(.alphabet)
                         .padding(.bottom,320)
                         .padding(.leading,25)
                         
-                        DatePicker("Select a Date", selection: $DatePickerR, in: startingDate...endingDate ,
+                        DatePicker("Select a Date", selection: $item.todaytime, in: startingDate...endingDate ,
                                     displayedComponents: [.date])
                         .padding(.bottom,200)
                         .padding()
                         
-                        DatePicker("Start", selection: $startTime ,
+                        DatePicker("Start", selection: $item.todaystart ,
                                    displayedComponents: .hourAndMinute)
                         .padding(.bottom,40)
                         .padding()
                         
-                        DatePicker("End", selection: $endTime,                            displayedComponents: .hourAndMinute)
+                        DatePicker("End", selection: $item.todayend,                            displayedComponents: .hourAndMinute)
                             .padding(.top,100)
                             .padding()
                         
@@ -82,7 +86,11 @@ struct Task: View {
                     
                     }
             HStack{
-                Text("Cancel")
+                Button("Cancel"){
+                    withAnimation{
+                        context.insert(item)
+                    }
+                }
                     .foregroundColor(.black)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
@@ -107,5 +115,6 @@ struct Task: View {
 }
 
 #Preview {
-    Task()
+    TaskView()
+        .modelContainer(for: NewTask.self)
 }
