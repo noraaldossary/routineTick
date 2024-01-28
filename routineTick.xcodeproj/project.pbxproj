@@ -28,6 +28,7 @@
 		77C985852B5F914800FA95C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77C985872B5F914900FA95C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C9858A2B5F914900FA95C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		77C985AF2B66404A00FA95C1 /* routineTick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = routineTick.entitlements; sourceTree = "<group>"; };
 		E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 		E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		E5A2DFB22B5F9FC8008CD04D /* role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = role.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		77C985822B5F914800FA95C1 /* routineTick */ = {
 			isa = PBXGroup;
 			children = (
+				77C985AF2B66404A00FA95C1 /* routineTick.entitlements */,
 				77C985832B5F914800FA95C1 /* routineTickApp.swift */,
 				77C985852B5F914800FA95C1 /* ContentView.swift */,
 				E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */,
@@ -293,10 +295,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = routineTick/routineTick.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"routineTick/Preview Content\"";
-				DEVELOPMENT_TEAM = 7246UF2S5L;
+				DEVELOPMENT_TEAM = V6K5GWB69S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -322,10 +325,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = routineTick/routineTick.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"routineTick/Preview Content\"";
-				DEVELOPMENT_TEAM = 7246UF2S5L;
+				DEVELOPMENT_TEAM = V6K5GWB69S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
