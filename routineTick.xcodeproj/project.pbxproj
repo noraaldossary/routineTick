@@ -16,7 +16,7 @@
 		77C9858B2B5F914900FA95C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9858A2B5F914900FA95C1 /* Preview Assets.xcassets */; };
 		E5A2DFAF2B5F9E3D008CD04D /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */; };
 		E5A2DFB12B5F9F56008CD04D /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */; };
-		E5A2DFB32B5F9FC8008CD04D /* role.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2DFB22B5F9FC8008CD04D /* role.swift */; };
+		E5A2DFB32B5F9FC8008CD04D /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2DFB22B5F9FC8008CD04D /* RoleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		77C985AF2B66404A00FA95C1 /* routineTick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = routineTick.entitlements; sourceTree = "<group>"; };
 		E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 		E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
-		E5A2DFB22B5F9FC8008CD04D /* role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = role.swift; sourceTree = "<group>"; };
+		E5A2DFB22B5F9FC8008CD04D /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 				04C92FFF2B62510700C4A0D0 /* TaskView.swift */,
 				040AF6DE2B662B7900B54A8D /* newtask.swift */,
 				29971A812B66328400AC0E9E /* Today .swift */,
-				E5A2DFB22B5F9FC8008CD04D /* role.swift */,
+				E5A2DFB22B5F9FC8008CD04D /* RoleView.swift */,
 				77C985872B5F914900FA95C1 /* Assets.xcassets */,
 				77C985892B5F914900FA95C1 /* Preview Content */,
 			);
@@ -159,7 +159,7 @@
 			files = (
 				29971A822B66328400AC0E9E /* Today .swift in Sources */,
 				E5A2DFAF2B5F9E3D008CD04D /* RuleView.swift in Sources */,
-				E5A2DFB32B5F9FC8008CD04D /* role.swift in Sources */,
+				E5A2DFB32B5F9FC8008CD04D /* RoleView.swift in Sources */,
 				040AF6DF2B662B7900B54A8D /* newtask.swift in Sources */,
 				77C985862B5F914800FA95C1 /* ContentView.swift in Sources */,
 				E5A2DFB12B5F9F56008CD04D /* Onboarding.swift in Sources */,

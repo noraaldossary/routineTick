@@ -97,7 +97,7 @@ struct TaskView: View {
                     .background(Color(red: 0.941, green: 0.941, blue: 0.941))
                     .cornerRadius(5)
 
-                NavigationLink(destination: role()) {
+                NavigationLink(destination: RoleView()) {
                     Text("Add")
                         .foregroundColor(.white)
                         .padding(.horizontal, 17)

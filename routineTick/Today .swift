@@ -27,8 +27,8 @@ struct Today: View {
                                 Circle()
                                     .frame(width: 30, height: 20)
                                     .foregroundColor(colorForHour(index))
-                                    .overlay(Circle().stroke(Color.darkPurple, lineWidth: 1))
-                                
+                                    .overlay(Circle().stroke(Color("MainColor"), lineWidth: 1))
+
                                 // خط طولي
                                 if index < 23 {
                                     Spacer()
@@ -57,9 +57,9 @@ struct Today: View {
                                 .frame(width: 260, height: 70)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.darkPurple, lineWidth: 1)
-                                    
-                                )
+                                        .stroke(Color("MainColor"), lineWidth: 1))
+
+                                
                             Text(item.titleName)
                                 .padding(.bottom,40)
                                 .padding(.trailing,120)
@@ -102,11 +102,11 @@ struct Today: View {
                     ToolbarItemGroup(placement: ToolbarItemPlacement.navigationBarTrailing) {
                         Button(action:{showCreate.toggle()}){
                             Image(systemName: "qrcode")
-                                .foregroundColor(Color.darkPurple)
+                                .foregroundColor(Color("MainColor"))
                         }
                         Button(action: {showQR.toggle()}){
                             Image(systemName:"plus.app")
-                                .foregroundColor(Color.darkPurple)
+                                .foregroundColor(Color("MainColor"))
                         }.sheet(isPresented: $showCreate, content: {
                             NavigationStack{
                              TaskView()
@@ -126,7 +126,7 @@ struct Today: View {
 
         if let currentHour = components.hour {
             // قم بتحديد لون الدائرة استنادًا إلى الساعة الحالية
-            return currentHour == hour ? .darkPurple : .clear
+            return currentHour == hour ? Color("MainColor") : Color.clear
         }
 
         return .clear
