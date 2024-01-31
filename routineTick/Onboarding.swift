@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct OnboardingView: View {
-//    @AppStorage ("currentPage") var currentPage = 1
-    
     let onboardingData = [
         OnboardingItem(imageName: "image1", title: "Hi there !", description: "Welcome to RoutineTick, your personal assistant for seamless communication between housewives and maids."),
         OnboardingItem(imageName: "image2", title: "Assign Tasks", description: "Set the household tasks that matter to you. Customize your task list to align with your daily routine."),

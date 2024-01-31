@@ -9,16 +9,65 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            RuleView()
+                .tabItem {
+                    Label("Challenge", systemImage: "checklist")
+                }
+            
+            RuleView()
+                .tabItem {
+                    Label("Calendar", systemImage: "calendar")
+                }
+            
+            RuleView()
+                .tabItem {
+                    Label("Stories", systemImage: "book.pages")
+                }
         }
-        .padding()
+        .accentColor(Color("MainColor"))
+
+        
+        
     }
 }
+    #Preview {
+        ContentView()
+    }
 
-#Preview {
-    ContentView()
-}
+//
+//import SwiftUI
+//
+//struct ContentView: View {
+//    @StateObject private var roleManager = RoleManager()
+//
+//    var body: some View {
+//        TabView {
+//            RuleView()
+//                .tabItem {
+//                    Label("Challenge", systemImage: "checklist")
+//                }
+//                .environmentObject(roleManager)
+//
+//            
+//            RuleView()
+//                .tabItem {
+//                    Label("Calendar", systemImage: "calendar")
+//                }
+//                .environmentObject(roleManager)
+//
+//            
+//            RuleView()
+//                .tabItem {
+//                    Label("Stories", systemImage: "book.pages")
+//                }
+//                .environmentObject(roleManager)
+//        }
+//        .accentColor(Color("MainColor"))
+//        
+//    }
+//}
+//    #Preview {
+//        ContentView()
+//    }
+//
