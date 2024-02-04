@@ -7,28 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040AF6DF2B662B7900B54A8D /* newtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AF6DE2B662B7900B54A8D /* newtask.swift */; };
-		04C930002B62510700C4A0D0 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C92FFF2B62510700C4A0D0 /* TaskView.swift */; };
-		29971A822B66328400AC0E9E /* Today .swift in Sources */ = {isa = PBXBuildFile; fileRef = 29971A812B66328400AC0E9E /* Today .swift */; };
 		77C985842B5F914800FA95C1 /* routineTickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985832B5F914800FA95C1 /* routineTickApp.swift */; };
 		77C985862B5F914800FA95C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C985852B5F914800FA95C1 /* ContentView.swift */; };
 		77C985882B5F914900FA95C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C985872B5F914900FA95C1 /* Assets.xcassets */; };
 		77C9858B2B5F914900FA95C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9858A2B5F914900FA95C1 /* Preview Assets.xcassets */; };
+		E59B0D422B6B98C400843A66 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D412B6B98C400843A66 /* TabView.swift */; };
+		E59B0D462B6B9D5600843A66 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D442B6B9D5600843A66 /* Event.swift */; };
+		E59B0D472B6B9D5600843A66 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D452B6B9D5600843A66 /* EventStore.swift */; };
+		E59B0D562B6BA64A00843A66 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D532B6BA64900843A66 /* CalendarView.swift */; };
+		E59B0D572B6BA64A00843A66 /* DaysEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D542B6BA64900843A66 /* DaysEvents.swift */; };
+		E59B0D582B6BA64A00843A66 /* EventsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D552B6BA64A00843A66 /* EventsCalendarView.swift */; };
+		E59B0D5C2B6BA68400843A66 /* EventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D5A2B6BA68400843A66 /* EventsListView.swift */; };
+		E59B0D5D2B6BA68400843A66 /* ListViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D5B2B6BA68400843A66 /* ListViewRow.swift */; };
+		E59B0D632B6BA6D700843A66 /* EventFormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D602B6BA6D600843A66 /* EventFormType.swift */; };
+		E59B0D642B6BA6D700843A66 /* EventFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D612B6BA6D700843A66 /* EventFormView.swift */; };
+		E59B0D652B6BA6D700843A66 /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D622B6BA6D700843A66 /* EventFormViewModel.swift */; };
+		E59B0D682B6F643400843A66 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D672B6F643400843A66 /* ScannerView.swift */; };
+		E59B0D6A2B6F646000843A66 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D692B6F646000843A66 /* CameraView.swift */; };
+		E59B0D6C2B6F647100843A66 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0D6B2B6F647100843A66 /* QRCodeView.swift */; };
+		E59B0DAC2B6F6E1400843A66 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0DAB2B6F6E1400843A66 /* Permission.swift */; };
+		E59B0DAE2B6F6E1E00843A66 /* QRScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0DAD2B6F6E1E00843A66 /* QRScannerDelegate.swift */; };
+		E59B0DB02B6F6E2800843A66 /* Extensions+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B0DAF2B6F6E2800843A66 /* Extensions+View.swift */; };
 		E5A2DFAF2B5F9E3D008CD04D /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */; };
 		E5A2DFB12B5F9F56008CD04D /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */; };
 		E5A2DFB32B5F9FC8008CD04D /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2DFB22B5F9FC8008CD04D /* RoleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040AF6DE2B662B7900B54A8D /* newtask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newtask.swift; sourceTree = "<group>"; };
-		04C92FFF2B62510700C4A0D0 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		29971A812B66328400AC0E9E /* Today .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Today .swift"; sourceTree = "<group>"; };
 		77C985802B5F914800FA95C1 /* routineTick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = routineTick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C985832B5F914800FA95C1 /* routineTickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routineTickApp.swift; sourceTree = "<group>"; };
 		77C985852B5F914800FA95C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77C985872B5F914900FA95C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C9858A2B5F914900FA95C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		77C985AF2B66404A00FA95C1 /* routineTick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = routineTick.entitlements; sourceTree = "<group>"; };
+		E59B0D412B6B98C400843A66 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		E59B0D442B6B9D5600843A66 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E59B0D452B6B9D5600843A66 /* EventStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
+		E59B0D532B6BA64900843A66 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E59B0D542B6BA64900843A66 /* DaysEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysEvents.swift; sourceTree = "<group>"; };
+		E59B0D552B6BA64A00843A66 /* EventsCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCalendarView.swift; sourceTree = "<group>"; };
+		E59B0D5A2B6BA68400843A66 /* EventsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListView.swift; sourceTree = "<group>"; };
+		E59B0D5B2B6BA68400843A66 /* ListViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewRow.swift; sourceTree = "<group>"; };
+		E59B0D602B6BA6D600843A66 /* EventFormType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormType.swift; sourceTree = "<group>"; };
+		E59B0D612B6BA6D700843A66 /* EventFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormView.swift; sourceTree = "<group>"; };
+		E59B0D622B6BA6D700843A66 /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormViewModel.swift; sourceTree = "<group>"; };
+		E59B0D672B6F643400843A66 /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		E59B0D692B6F646000843A66 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		E59B0D6B2B6F647100843A66 /* QRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		E59B0DAB2B6F6E1400843A66 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		E59B0DAD2B6F6E1E00843A66 /* QRScannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerDelegate.swift; sourceTree = "<group>"; };
+		E59B0DAF2B6F6E2800843A66 /* Extensions+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+View.swift"; sourceTree = "<group>"; };
 		E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 		E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		E5A2DFB22B5F9FC8008CD04D /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
@@ -65,14 +93,15 @@
 			isa = PBXGroup;
 			children = (
 				77C985AF2B66404A00FA95C1 /* routineTick.entitlements */,
+				E59B0D5F2B6BA6C800843A66 /* EditUpdateView */,
+				E59B0D592B6BA66400843A66 /* TodayView */,
+				E59B0D522B6BA61A00843A66 /* CalendarView */,
+				E59B0D662B6F640A00843A66 /* Scanner */,
+				E59B0D402B6B983B00843A66 /* View */,
+				E59B0D432B6B9D0200843A66 /* Model */,
 				77C985832B5F914800FA95C1 /* routineTickApp.swift */,
 				77C985852B5F914800FA95C1 /* ContentView.swift */,
-				E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */,
 				E5A2DFB02B5F9F56008CD04D /* Onboarding.swift */,
-				04C92FFF2B62510700C4A0D0 /* TaskView.swift */,
-				040AF6DE2B662B7900B54A8D /* newtask.swift */,
-				29971A812B66328400AC0E9E /* Today .swift */,
-				E5A2DFB22B5F9FC8008CD04D /* RoleView.swift */,
 				77C985872B5F914900FA95C1 /* Assets.xcassets */,
 				77C985892B5F914900FA95C1 /* Preview Content */,
 			);
@@ -85,6 +114,68 @@
 				77C9858A2B5F914900FA95C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E59B0D402B6B983B00843A66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5A2DFAE2B5F9E3D008CD04D /* RuleView.swift */,
+				E59B0D412B6B98C400843A66 /* TabView.swift */,
+				E5A2DFB22B5F9FC8008CD04D /* RoleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E59B0D432B6B9D0200843A66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E59B0DAB2B6F6E1400843A66 /* Permission.swift */,
+				E59B0DAF2B6F6E2800843A66 /* Extensions+View.swift */,
+				E59B0D442B6B9D5600843A66 /* Event.swift */,
+				E59B0DAD2B6F6E1E00843A66 /* QRScannerDelegate.swift */,
+				E59B0D452B6B9D5600843A66 /* EventStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E59B0D522B6BA61A00843A66 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				E59B0D532B6BA64900843A66 /* CalendarView.swift */,
+				E59B0D542B6BA64900843A66 /* DaysEvents.swift */,
+				E59B0D552B6BA64A00843A66 /* EventsCalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		E59B0D592B6BA66400843A66 /* TodayView */ = {
+			isa = PBXGroup;
+			children = (
+				E59B0D5A2B6BA68400843A66 /* EventsListView.swift */,
+				E59B0D5B2B6BA68400843A66 /* ListViewRow.swift */,
+			);
+			path = TodayView;
+			sourceTree = "<group>";
+		};
+		E59B0D5F2B6BA6C800843A66 /* EditUpdateView */ = {
+			isa = PBXGroup;
+			children = (
+				E59B0D602B6BA6D600843A66 /* EventFormType.swift */,
+				E59B0D612B6BA6D700843A66 /* EventFormView.swift */,
+				E59B0D622B6BA6D700843A66 /* EventFormViewModel.swift */,
+			);
+			name = EditUpdateView;
+			path = TodayView/EditUpdateView;
+			sourceTree = "<group>";
+		};
+		E59B0D662B6F640A00843A66 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				E59B0D692B6F646000843A66 /* CameraView.swift */,
+				E59B0D672B6F643400843A66 /* ScannerView.swift */,
+				E59B0D6B2B6F647100843A66 /* QRCodeView.swift */,
+			);
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,14 +248,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29971A822B66328400AC0E9E /* Today .swift in Sources */,
+				E59B0D632B6BA6D700843A66 /* EventFormType.swift in Sources */,
 				E5A2DFAF2B5F9E3D008CD04D /* RuleView.swift in Sources */,
+				E59B0D5D2B6BA68400843A66 /* ListViewRow.swift in Sources */,
+				E59B0D6A2B6F646000843A66 /* CameraView.swift in Sources */,
+				E59B0DAE2B6F6E1E00843A66 /* QRScannerDelegate.swift in Sources */,
+				E59B0DAC2B6F6E1400843A66 /* Permission.swift in Sources */,
+				E59B0D682B6F643400843A66 /* ScannerView.swift in Sources */,
+				E59B0D642B6BA6D700843A66 /* EventFormView.swift in Sources */,
 				E5A2DFB32B5F9FC8008CD04D /* RoleView.swift in Sources */,
-				040AF6DF2B662B7900B54A8D /* newtask.swift in Sources */,
+				E59B0D652B6BA6D700843A66 /* EventFormViewModel.swift in Sources */,
+				E59B0DB02B6F6E2800843A66 /* Extensions+View.swift in Sources */,
+				E59B0D582B6BA64A00843A66 /* EventsCalendarView.swift in Sources */,
+				E59B0D6C2B6F647100843A66 /* QRCodeView.swift in Sources */,
+				E59B0D472B6B9D5600843A66 /* EventStore.swift in Sources */,
 				77C985862B5F914800FA95C1 /* ContentView.swift in Sources */,
 				E5A2DFB12B5F9F56008CD04D /* Onboarding.swift in Sources */,
-				04C930002B62510700C4A0D0 /* TaskView.swift in Sources */,
+				E59B0D562B6BA64A00843A66 /* CalendarView.swift in Sources */,
+				E59B0D5C2B6BA68400843A66 /* EventsListView.swift in Sources */,
+				E59B0D422B6B98C400843A66 /* TabView.swift in Sources */,
+				E59B0D462B6B9D5600843A66 /* Event.swift in Sources */,
 				77C985842B5F914800FA95C1 /* routineTickApp.swift in Sources */,
+				E59B0D572B6BA64A00843A66 /* DaysEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

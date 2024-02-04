@@ -5,35 +5,33 @@
 //  Created by Nora Aldossary on 11/07/1445 AH.
 //
 
-import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        TabView {
-            RuleView()
-                .tabItem {
-                    Label("Challenge", systemImage: "checklist")
-                }
-            
-            RuleView()
-                .tabItem {
-                    Label("Calendar", systemImage: "calendar")
-                }
-            
-            RuleView()
-                .tabItem {
-                    Label("Stories", systemImage: "book.pages")
-                }
-        }
-        .accentColor(Color("MainColor"))
-
-        
-        
-    }
-}
-    #Preview {
-        ContentView()
-    }
+//import SwiftUI
+//
+//struct ContentView: View {
+//    var body: some View {
+//        TabView {
+//            RuleView(ruleManager: RuleManager(), isHousewife: true)
+//                .tabItem {
+//                    Label("Today", systemImage: "checklist")
+//                }
+//            
+//            RuleView(ruleManager: RuleManager(), isHousewife: true)
+//                .tabItem {
+//                    Label("Calendar", systemImage: "calendar")
+//                }
+//            
+//            RuleView(ruleManager: RuleManager(), isHousewife: true)
+//                .tabItem {
+//                    Label("Stories", systemImage: "book.pages")
+//                }
+//        }
+//        .accentColor(Color("MainColor"))
+//    }
+//}
+//
+//#Preview {
+//    ContentView()
+//}
 
 //
 //import SwiftUI

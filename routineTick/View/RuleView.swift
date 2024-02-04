@@ -29,11 +29,16 @@ class RuleManager: ObservableObject {
 }
 
 struct RuleView: View {
-    @StateObject private var ruleManager = RuleManager()
     @State private var isAddingRule = false
     @State private var isEditingRule = false
     @State private var newRuleContent = ""
     @State private var editingRuleIndex: Int?
+    
+    @ObservedObject var ruleManager: RuleManager
+    var isHousewife: Bool  // New boolean variable
+    var editingAllowed: Bool {
+        return isHousewife  // Use isHousewife to determine editing permissions
+    }
 
     var body: some View {
         NavigationView {
@@ -54,27 +59,31 @@ struct RuleView: View {
                     }
                 }
                 .onDelete { indexSet in
-                    ruleManager.deleteRule(at: indexSet)
+                    if editingAllowed {
+                        ruleManager.deleteRule(at: indexSet)
+                    }
                 }
             }
             .listStyle(SidebarListStyle())
             .navigationTitle("Rules")
             .toolbar {
                 Button(action: {
-                    isAddingRule = true
-                    editingRuleIndex = nil
+                    if editingAllowed {
+                        isAddingRule = true
+                        editingRuleIndex = nil
+                    }
                 }) {
                     Label("Add Rule", systemImage: "plus.circle")
                 }
                 .buttonStyle(PlainButtonStyle())
-                .foregroundColor(Color("MainColor"))
+                .foregroundColor(editingAllowed ? Color("MainColor") : .gray)
             }
         }
         .sheet(isPresented: $isAddingRule) {
-            RuleEditorView(ruleManager: ruleManager, isAddingRule: $isAddingRule, newRuleContent: $newRuleContent)
+            RuleEditorView(ruleManager: ruleManager, isAddingRule: $isAddingRule, newRuleContent: $newRuleContent, editingRuleIndex: editingRuleIndex, editingAllowed: editingAllowed)
         }
         .sheet(isPresented: $isEditingRule) {
-            RuleEditorView(ruleManager: ruleManager, isAddingRule: $isEditingRule, newRuleContent: $newRuleContent, editingRuleIndex: editingRuleIndex)
+            RuleEditorView(ruleManager: ruleManager, isAddingRule: $isEditingRule, newRuleContent: $newRuleContent, editingRuleIndex: editingRuleIndex, editingAllowed: editingAllowed)
         }
     }
 }
@@ -84,6 +93,8 @@ struct RuleEditorView: View {
     @Binding var isAddingRule: Bool
     @Binding var newRuleContent: String
     var editingRuleIndex: Int?
+    var editingAllowed: Bool
+
 
     var body: some View {
         NavigationView {
@@ -149,8 +160,11 @@ extension TextField {
     }
 }
 
-#Preview {
-    RuleView()
+struct RuleView_Previews: PreviewProvider {
+    static var previews: some View {
+        let ruleManager = RuleManager()  // Create an instance of RuleManager
+        RuleView(ruleManager: ruleManager, isHousewife: true)  // Provide values for ruleManager and editingAllowed
+    }
 }
 //
 //import SwiftUI

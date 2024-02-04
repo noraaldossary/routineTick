@@ -9,7 +9,8 @@ import CloudKit
 
 struct RoleView: View {
     @State private var selectedRole: String? = nil
-    let container = CKContainer(identifier: "iCloud.routineTick")
+    @State private var isActiveRuleView = false
+    let container = CKContainer(identifier: "iCloud.routionTick_1")
 
     var body: some View {
         ZStack {
@@ -54,18 +55,26 @@ struct RoleView: View {
                     }
                 }
                 .padding()
-                //هنا الاكشن
+                
+                // NavigationLink to RuleView
+                NavigationLink(
+                    destination: RuleView(ruleManager: RuleManager(), isHousewife: selectedRole == "housewife"),
+                    isActive: $isActiveRuleView
+                ) {
+                    EmptyView()
+                }
+                .hidden()
+                
+                // Button to trigger navigation
                 Button(action: {
                     if let selectedRole = selectedRole {
                         saveRoleToCloudKit(role: selectedRole)
                         
                         switch selectedRole {
                         case "maids":
-// يروح لفيو العامله ، بس تقرا بدون تعديل وحذف والخ
-                            break
+                            isActiveRuleView = true
                         case "housewife":
-                            //يروح لفيو الام (كل الصلاحيات)
-                            break
+                            isActiveRuleView = true
                         default:
                             break
                         }
@@ -91,7 +100,7 @@ struct RoleView: View {
             selectedRole = role
         }
     }
-// هنا تحفظ لي الرول في التيبل
+
     private func saveRoleToCloudKit(role: String) {
         let record = CKRecord(recordType: "UserRole")
         record["role"] = role as CKRecordValue

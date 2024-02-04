@@ -135,15 +135,15 @@ struct OnboardingView: View {
         let title: String
         let description: String
     }
-    
-    @main
-    struct OnboardingApp: App {
-        var body: some Scene {
-            WindowGroup {
-                OnboardingView()
-            }
-        }
-    }
+//    
+//    @main
+//    struct OnboardingApp: App {
+//        var body: some Scene {
+//            WindowGroup {
+//                OnboardingView()
+//            }
+//        }
+//    }
 }
 #Preview {
     OnboardingView()
